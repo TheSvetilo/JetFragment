@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/justMainFragment">
+
+    <fragment
+        android:id="@+id/justMainFragment"
+        android:name="com.example.jetfragment.JustMainFragment"
+        android:label="JustMainFragment" >
+        <action
+            android:id="@+id/action_justMainFragment_to_anotherFragment"
+            app:destination="@id/anotherFragment" />
+    </fragment>
+    
+    <fragment
+        android:id="@+id/anotherFragment"
+        android:name="com.example.jetfragment.AnotherFragment"
+        android:label="AnotherFragment" />
+</navigation>
